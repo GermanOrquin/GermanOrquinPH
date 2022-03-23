@@ -71,14 +71,29 @@ nav ul li a:hover::before {
   width: 100%;
 }
 
+.fotos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carrito {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .foto1 {
   width: 1300px;
+  padding: 10px;
 }
 .foto2 {
   width: 1300px;
+  padding: 10px;
 }
 .foto3 {
   width: 1300px;
+  padding: 10px;
 }
 
 .mantenimiento {
@@ -162,7 +177,7 @@ margin: auto;
   margin: 20px;
   text-align: center;
   transition: all 0.25s;
-  background: rgba(228, 218, 218, 0.815);
+  background: rgba(255, 255, 255, 0.575);
 }
 
 .container .card:hover{
@@ -179,18 +194,31 @@ margin: auto;
 font-weight: 600;
 }
 
+.container .card .separar {
+padding-bottom: 15px;
+}
+.container .card .precio {
+  font-size: 30px;
+  font-weight: bold;
+}
+
 .container .card p{
 padding: 0 1rem;
 font-size: 16px;
-font-weight: 300;
-color: white;
+font-weight: 600;
+color: rgb(12, 8, 8);
 }
 
 .container .card a {
   font-weight: 500;
   text-decoration: none;
   color: rgb(0, 0, 0);
+  font-size: x-large;
+  position: relative;
+  bottom: -18px;
+  font-weight: bolder;
 }
+
 
 .footer {
   margin-top: 16vw;
@@ -261,4 +289,9 @@ padding: 0 15px;
 .fondo1 {
   background-image: url(../Images/fondo.jpg);
   background-size: 100vw;
+}
+
+.presentacion {
+  display: flex;
+  align-items: center;
 }
